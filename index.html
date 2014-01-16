@@ -1,13 +1,37 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: NHV Mobile
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<div class="jumbotron">
+  <h1>You Found Us.</h1>
+  <p class="lead">We're a bi-monthly meet up for mobile developers in New Haven.</p>
+
+  <a class="btn btn-lg btn-success" href="{{ site.join_url }}" role="button">We'd love you to join.</a>
+</div>
+
+<div class="row marketing">
+  <div class="col-sm-6">
+    <h4>Our Next Meet Up</h4>
+    <p>
+      Date: <b>TBD</b><br>
+      Topic: <b>TBD</b><br>
+      Location: <b>TBD</b>
+    </p>
+
+     <div id="map-canvas"></div>
+  </div>
+
+  <div class="col-sm-6">
+    <h4>Get Involved</h4>
+    <p>Many hands make easy work. We're working hard to get off the ground, if you have a little time and a skill to be put to use, we'll greatly appreciate your help.</p>
+    <p>If you're not already signed up, <a href="{{ site.join_url }}">join</a> our mailing list.</p>
+
+    <h4>Talk Proposals</h4>
+    <p>Have an idea for a full length talk (~30-45 mins) or lightning talk (~5-10 mins)?</p>
+    <p>Let us know: <a href='mailto:talks@nhvmobile.com'>talks@nhvmobile.com</a></p>
+
+    <h4>Sponsorship</h4>
+    <p>We're actively looking for sponsorship in terms of space and money (food, operating costs, etc.). If you're interested and able, please contact <a href='mailto:sponsorship@nhvmobile.com'>sponsorship@nhvmobile.com</a></p>
+  </div>
 </div>
