@@ -35,12 +35,20 @@
 
     <script type="text/javascript">
       function initialize() {
+        var sitar_ll = new google.maps.LatLng(41.3099338,-72.921299);
+
         var mapOptions = {
-          center: new google.maps.LatLng(41.3082740,-72.92788350),
-          zoom: 13
+          center: sitar_ll,
+          zoom: 15
         };
-        var map = new google.maps.Map(document.getElementById("map-canvas"),
-            mapOptions);
+
+        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: sitar_ll,
+            map: map,
+            title: 'Sitar'
+        });
       }
 
       google.maps.event.addDomListener(window, 'load', initialize);
