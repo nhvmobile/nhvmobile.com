@@ -19,7 +19,7 @@
       <div class='footer'></div>
     </div>
 
-<!-- 
+<!--
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="/js/bootstrap.min.js"></script>
 -->
@@ -28,17 +28,20 @@
 
     <script type="text/javascript">
       function initialize() {
-        var sitar_ll = new google.maps.LatLng(41.3099338,-72.921299);
+        // var sitar_ll = new google.maps.LatLng(41.3099338,-72.921299);
+        var grove_ll = new google.maps.LatLng(41.304654,-72.923474);
+
+        var event_ll = grove_ll;
 
         var mapOptions = {
-          center: sitar_ll,
+          center: event_ll,
           zoom: 15
         };
 
         var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 
         var marker = new google.maps.Marker({
-            position: sitar_ll,
+            position: event_ll,
             map: map,
             title: 'Sitar'
         });
@@ -58,6 +61,3 @@
     </script>
   </body>
 </html>
-
-
-
